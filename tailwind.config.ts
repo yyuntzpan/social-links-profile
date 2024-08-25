@@ -8,13 +8,19 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors:{
+        'green': "hsl(75, 94%, 57%)",
+        'white': "hsl(0, 0%, 100%)",
+        'grey-700': "hsl(0, 0%, 20%)",
+        'grey-800': "hsl(0, 0%, 12%)",
+        'grey-900': "hsl(0, 0%, 8%)",
+      },
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
       },
     },
   },
   plugins: [],
 };
 export default config;
+

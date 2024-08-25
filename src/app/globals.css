@@ -2,28 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 :root {
+  --Color-Green: hsl(75, 94%, 57%);
+  --Color-White: hsl(0, 0%, 100%);
+  --Color-Grey-700: hsl(0, 0%, 20%);
+  --Color-Grey-800: hsl(0, 0%, 12%);
+  --Color-Grey-900: hsl(0, 0%, 8%);
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --font-inter: "Inter", sans-serif;
 }
+
+/* @font-face {
+  font-family: var(--font-inter);
+  src: url("/fonts/Inter-VariableFont_slnt\,wght.ttf") format("truetype");
+} */
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
+    --foreground-rgb: hsl(0, 0%, 8%);
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: var(--font-inter);
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: var(--Color-White);
+  background: var(--foreground-rgb)
+}
+
+p {
+  font-size: 14px;
 }
 
 @layer utilities {
