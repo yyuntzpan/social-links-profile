@@ -10,16 +10,11 @@
   --Color-Grey-700: hsl(0, 0%, 20%);
   --Color-Grey-800: hsl(0, 0%, 12%);
   --Color-Grey-900: hsl(0, 0%, 8%);
-  --foreground-rgb: 0, 0, 0;
+  --foreground-rgb: hsl(0, 0%, 8%);
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
   --font-inter: "Inter", sans-serif;
 }
-
-/* @font-face {
-  font-family: var(--font-inter);
-  src: url("/fonts/Inter-VariableFont_slnt\,wght.ttf") format("truetype");
-} */
 
 @media (prefers-color-scheme: dark) {
   :root {
