@@ -52,13 +52,14 @@ export default function Home() {
 
           <ul className="flex flex-col w-full gap-4">
             {profileData.socialsLinks.map((social) => (
-              <Link
-                className="text-sm font-semibold bg-grey-700 rounded-lg py-3 w-full hover:bg-green hover:text-grey-900 focus:bg-green focus:text-grey-900"
-                href={social.url}
-                key={social.name}
-              >
-                <li>{social.name}</li>
-              </Link>
+              <li key={social.name}>
+                <Link
+                  className="text-sm font-semibold bg-grey-700 rounded-lg py-3 w-full hover:bg-green hover:text-grey-900 focus:bg-green focus:text-grey-900"
+                  href={social.url}
+                >
+                  {social.name}
+                </Link>
+              </li>
             ))}
           </ul>
         </div>
