@@ -31,9 +31,9 @@ const profileData = {
 
 export default function Home() {
   return (
-    <div className="min-h-dvh flex flex-col items-center justify-center">
-      <main className="flex flex-col items-center justify-center grow m-5">
-        <div className="text-center flex flex-col items-center  bg-grey-800  rounded-xl w-full max-w-sm p-6 sm:p-10 gap-6">
+    <div className="min-h-dvh flex flex-col items-center justify-center mx-5">
+      <main className="flex flex-col items-center justify-center grow m-5 w-full max-w-sm">
+        <div className="text-center flex flex-col items-center  bg-grey-800  rounded-xl w-full  p-6 sm:p-10 gap-6">
           <Image
             className="rounded-full"
             src="/avatar-jessica.jpeg"
