@@ -54,7 +54,7 @@ export default function Home() {
             {profileData.socialsLinks.map((social) => (
               <li key={social.name}>
                 <Link
-                  className="text-sm font-semibold bg-grey-700 rounded-lg py-3 w-full hover:bg-green hover:text-grey-900 focus:bg-green focus:text-grey-900"
+                  className="block displaty-block w-full text-sm font-semibold  bg-grey-700 rounded-lg py-3  hover:bg-green hover:text-grey-900 focus:bg-green focus:text-grey-900"
                   href={social.url}
                 >
                   {social.name}
